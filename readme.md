@@ -107,6 +107,6 @@ Automatska konverzija podataka
 - 'foo' + + 'bar' ='fooNan' - jedan + će raditi pripajanje, drugi plus pretvoriti drugi string u broj i zato dobijemo 'fooNan'
 
 STRNG
+
 - brojanje pozici počinje od nule
 - myString = "Lorem ipsum" - L je na poziciji 0 i brojanje uvijek kreće od 0
-
