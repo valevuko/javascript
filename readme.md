@@ -93,7 +93,7 @@ NULL i UNDEFINED:
 PRIMJERI:
 typeof "John" // "string" - tekst
 typeof 3.14 // "number"
-typeof Nan // "number"
+typeof Nan // "number" (Nan -> not a number)
 typeof false // "boolean"
 typeof [1,2,3,4] // "object"
 typeof {name: 'John', age:34} //"object" - pravi objekt
@@ -101,3 +101,12 @@ typeof {name: 'John', age:34} //"object" - pravi objekt
 Automatska konverzija podataka
 
 - JS obavlja mnoge konverzije ovisno o kontekstu u kojem se podataka koristi te operatoru
+- znak + može biti zbrajanje ili konkatenacija (pripajanje)
+- ako imamo + i stringove i brojeve JS će ih pripojiti a ne zbrojiti (string + broj = string uvijek)
+- znak - je uvijek minus
+- 'foo' + + 'bar' ='fooNan' - jedan + će raditi pripajanje, drugi plus pretvoriti drugi string u broj i zato dobijemo 'fooNan'
+
+STRNG
+- brojanje pozici počinje od nule
+- myString = "Lorem ipsum" - L je na poziciji 0 i brojanje uvijek kreće od 0
+
