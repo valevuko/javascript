@@ -83,6 +83,9 @@ BOOLEAN:
 
 - true i false - predstavlja istinu ili neistinu, uključeno i isključeno, da ili ne, ne može biti nešto između ili je ili nije
 - truthy i false - vrijednosti koje se konvertiraju u true i false kada izraz očekuje Boolean vrijednost
+  Primjeri:
+  var x = Boolean (bull); // x = false
+  var x = Boolean ({}); // x = true
 
 NULL i UNDEFINED:
 
@@ -110,3 +113,21 @@ STRNG
 
 - brojanje pozici počinje od nule
 - myString = "Lorem ipsum" - L je na poziciji 0 i brojanje uvijek kreće od 0
+
+KONKATENACIJA
+
+Spajanje dva ili više stringova koristi se znak +
+x = "Hello, " + "World";
+x = "Hello, " + 5;
+
+    var x = "Ovo je vrlo dugi string" +
+        "koji je u dva reda " +
+        "jer se inače ne može čitati";
+
+          ILI
+    var x = "Ovo je vrlo dugi string \
+          "koji je u dva reda \
+          "jer se inače ne može čitati.";
+
+Ako unutar stringa imamo još jedne navodnike moramo koristiti \, npr: var x = "Ovo je moj \"string\"";
+NAPOMENA: ako trebamo koristiti navodnike unutar stringa možemo koristiti dvostruke unutar jednostrukih i obrnute te će raditi
