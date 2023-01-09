@@ -131,3 +131,11 @@ x = "Hello, " + 5;
 
 Ako unutar stringa imamo još jedne navodnike moramo koristiti \, npr: var x = "Ovo je moj \"string\"";
 NAPOMENA: ako trebamo koristiti navodnike unutar stringa možemo koristiti dvostruke unutar jednostrukih i obrnute te će raditi
+
+TIPOVI OPERATORA
+
+Možemo ih podijeliti na:
+
+1. unarni - var x+=1;
+2. binarni - var x = y +1;
+3. ternarni -> kombinira 3 operacije: var x = y ? y : x + 1;
