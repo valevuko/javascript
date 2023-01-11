@@ -139,3 +139,47 @@ Možemo ih podijeliti na:
 1. unarni - var x+=1;
 2. binarni - var x = y +1;
 3. ternarni -> kombinira 3 operacije: var x = y ? y : x + 1;
+
+VRSTE IZJAVA
+
+UVJETI:
+
+- izvršavaju ili preskaču druge izjave o vrijednosti određenog izraza, tj granaju kod na više mogućnosti
+- ako je izraz truthy onda se izvrši izjava unutar zagrade, inače se izjava preskače
+  - // if - else
+    if (izraz){
+    // izvrši kod u bloku #1
+    } else {
+    // izvrši kod u bloku #2
+    }
+- else nam daje alternativu za slučaj da je izraz falsey
+- možemo koristiti i else if ako želimo postaviti dodatan uvjet
+  //JEDNOSTAVA IF:
+  if (izraz){
+  //izvrši kod u bloku #1
+  }
+  // IF - ELSE IF
+  if (izraz){
+  //izvršava kod u bloku 1#
+  } else if (izraz) {
+  //izvršava kod u bloku #2
+  }
+
+PETLJE:
+
+- repetitivno izvršavaju djelove koda
+  var count = 0
+  while (count < 10) {
+  console.log (count);
+  count++;
+  }
+
+  var count = 0
+  do {
+  console.log(count):
+  count ++;
+  } while (count < 10);
+
+IZJAVE SKOKOVA
+
+- (poput break, return, throw) naređuju interpreteru da skoči na neki drugi dio programa
