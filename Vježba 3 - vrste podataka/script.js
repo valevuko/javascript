@@ -21,3 +21,8 @@ console.log(6, spacevar);
 
 var test = text.charAt(12);
 console.log(7, test);
+
+//
+
+var noviText = "Valentina";
+console.log(noviText.replace("Valentina", "Davor"));
