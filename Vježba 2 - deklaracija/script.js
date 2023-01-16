@@ -32,6 +32,7 @@ var listaUsera = [
 
 console.log(listaUsera[1].age);
 
+//
 var names = ["Davor", "Valentina"];
 console.log(names[1]);
 

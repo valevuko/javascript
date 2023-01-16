@@ -4,6 +4,7 @@ console.log(1, textLength);
 
 var sitI = text.indexOf("sit");
 console.log(sitI);
+
 var sitvar = text.substring(sitI);
 console.log(2, sitvar);
 
