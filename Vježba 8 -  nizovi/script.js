@@ -14,3 +14,7 @@ name.forEach((element) => {
   if (element === "Jane") console.log(element);
 });
 //
+
+var numbers = [];
+numbers.push(2, 3);
+console.log(numbers);

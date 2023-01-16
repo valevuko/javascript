@@ -1,4 +1,4 @@
-//UVJETI:
+//UVJETI: 15/1/2023
 var x = 10;
 y = 5;
 isActive = true;
@@ -49,3 +49,18 @@ names.forEach((name) => {
     return;
   }
 });
+
+////// novo: 16/1/2023
+// ako su sati manji od 12 i vrijeme kišno, napiši jesen
+//ako su sati veći od 12 i vrijeme sunčano napiši ljeto
+//ako je sati 11 ili snijeg, napiši idealno vrijeme
+var sati = 11;
+var vrijeme = "snijeg";
+
+if (sati < 12 && vrijeme === "kisno") {
+  console.log("jesen");
+} else if (sati > 12 && vrijeme === "suncano") {
+  console.log("ljeto");
+} else if ((sati = 11 || vrijeme === "snijeg")) {
+  console.log("idealno vrijeme");
+}
