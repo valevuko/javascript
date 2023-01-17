@@ -1,3 +1,5 @@
+//događaji/eventi primjer:
+
 var inputNode = document.querySelector("input");
 
 function handleBlur() {
