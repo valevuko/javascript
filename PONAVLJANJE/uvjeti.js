@@ -1,3 +1,5 @@
+//1
+
 var x = 10;
 y = 5;
 isActive = true;
@@ -17,4 +19,20 @@ if (y === 5 || isActive === false) {
   console.log("Prvi blok");
 } else {
   console.log("Drugi blok");
+}
+
+//2
+
+// ako su sati manji od 12 i vrijeme kišno, napiši jesen
+//ako su sati veći od 12 i vrijeme snijeg napiši ljeto
+//ako je sati 11 ili snijeg, napiši idealno vrijeme
+var sati = 10;
+var vrijeme = "sunčano";
+
+if (sati < 10 && vrijeme === "kišno") {
+  console.log("jesen");
+} else if (sati > 12 && vrijeme === "snijeg") {
+  console.log("ljeto");
+} else if ((sati = 12 || vrijeme === "snijeg")) {
+  console.log("idealno vrijeme");
 }
