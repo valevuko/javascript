@@ -17,5 +17,20 @@ if (broj % 2 === 0 && broj > 15) {
   console.log("Broj je neparan i manji od 15");
 }
 
-//3 Program treba od korisnika tražiti unos cijelog broja. Na zaslon treba ispisati je li učitani broj pozitivan, negativan ili je nula.
-//4 Program treba od korisnika tražiti unos broja. Ako je broj manji od 0 treba ispisati njegov sljedbenik, inače treba ispisati njegov prethodnik.
+//3 If the hour is less than 18, create a "Good day" greeting, otherwise "Good evening":
+var sati = 18;
+if (sati < 18) {
+  console.log("Good day");
+} else {
+  console.log("Good evening");
+}
+
+//4 If time is less than 10:00, create a "Good morning" greeting, if not, but time is less than 22:00, create a "Good day" greeting, otherwise a "Good evening":
+var sati = 10;
+if (sati < 10) {
+  console.log("Good morning");
+} else if (sati < 22) {
+  console.log("Good day");
+} else {
+  console.log("Good evening");
+}
