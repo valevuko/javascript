@@ -1,6 +1,6 @@
 1. Dopustiti korisniku unos jednog broja te ispisati ispod poruku "Broj je mali" ako je manji od 5, "Broj je srednji"
    ako je između 5 i 10, "Broje je velik" ako je broj veći od 10.
-2. Dopustiti korisniku unos jednog broja te ispisati ispod je li broj paran ili neparan.
+2. Dopustiti korisniku unos jednog broja te ispisati ispod je li broj paran ili neparan. - riješeno
 3. Dopustiti korisniku unos jednog broja te od njega oduzeti 5 ako je broj paran, a 7 ako ej broj neparan.
    Ukoliko je dobiveni broj manji od 0 na ekran ispisati da je došlo do pogreško. Ukoliko broj nije manji od 0 na ekran
    ispisati dobiveni broj.
