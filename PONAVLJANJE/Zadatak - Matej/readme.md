@@ -1,13 +1,18 @@
-1. Dopustiti korisniku unos jednog broja te ispisati ispod poruku "Broj je mali" ako je manji od 5, "Broj je srednji"
-   ako je između 5 i 10, "Broje je velik" ako je broj veći od 10.
-2. Dopustiti korisniku unos jednog broja te ispisati ispod je li broj paran ili neparan. - riješeno
-3. Dopustiti korisniku unos jednog broja te od njega oduzeti 5 ako je broj paran, a 7 ako ej broj neparan.
+<!-- 1. Dopustiti korisniku unos jednog broja te ispisati ispod poruku "Broj je mali" ako je manji od 5, "Broj je srednji"
+   ako je između 5 i 10, "Broje je velik" ako je broj veći od 10. -->
+
+<!-- 2. Dopustiti korisniku unos jednog broja te ispisati ispod je li broj paran ili neparan. - riješeno -->
+
+<!-- 3. Dopustiti korisniku unos jednog broja te od njega oduzeti 5 ako je broj paran, a 7 ako ej broj neparan.
    Ukoliko je dobiveni broj manji od 0 na ekran ispisati da je došlo do pogreško. Ukoliko broj nije manji od 0 na ekran
-   ispisati dobiveni broj.
-4. Dopustiti korisniku unos jednog broja te ispod ispisati sve brojeve od 1 do tog broja. Ukoliko je uneseni broj manji
-   ili jedan jedinici ispisati poruku pogreške ispod.
-5. Dopustiti korisniku unos jednog broja te zbojiti sve brojeve od 1 do tog broja. Ukolik je uneseni broj manji ili
-   jednak jedinici ispisati poruku pogređke ispod.
+   ispisati dobiveni broj. -->
+
+<!-- 4. Dopustiti korisniku unos jednog broja te ispod ispisati sve brojeve od 1 do tog broja. Ukoliko je uneseni broj manji
+   ili jednak jedinici ispisati poruku pogreške ispod. -->
+
+<!-- 5. Dopustiti korisniku unos jednog broja te zbojiti sve brojeve od 1 do tog broja. Ukolik je uneseni broj manji ili
+   jednak jedinici ispisati poruku pogređke ispod. -->
+
 6. Dopustiti korisniku unos dva broja te ispod ispisati zbroj svih brojeva između unesena dva broja.
    7.Napraviti program koji će simulirati dijeljenje karata u Blackjacku. Program treba krenuti od 0 i izbacivati random
    brojeve između 1 i 11 sve dok ne dođe do minimalno 17. Nakon toga ispisati dobiveni broj ukoliko je između 17 i 21, a

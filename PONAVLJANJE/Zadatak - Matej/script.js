@@ -37,14 +37,12 @@ function oduzmiBroj() {
 }
 
 //4
-/* <!-- 4. Dopustiti korisniku unos jednog broja te ispod ispisati sve brojeve od 1 do tog broja. Ukoliko je uneseni broj manji
-   ili jednak jedinici ispisati poruku pogreške ispod. --> */
 var nekiBroj = document.getElementById("podatak4").value;
 for (i = 1; i < nekiBroj; i++) {
   document.getElementById("napisi").innerHTML = "Ispisi brojeve " + nekiBroj;
 }
-
 //5
+
 //6
 //7
 //8
