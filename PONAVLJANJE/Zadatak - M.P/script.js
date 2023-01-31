@@ -4,7 +4,7 @@ function provjeriBroj() {
   if (broj < 5) {
     alert("Broj je mali");
   } else if (broj >= 5 && broj <= 10) {
-    alert("Broj je srednjni");
+    alert("Broj je srednji");
   } else {
     alert("Broj je velik");
   }
