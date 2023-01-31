@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Zadatak</title>
+</head>
+
+<body>
+
+    <!--1-->
+    <div>
+        <p>Dopustiti korisniku unos jednog broja te ispisati ispod poruku "Broj je mali" ako je manji od 5, "Broj je
+            srednji" ako je između 5 i 10, "Broje je velik" ako je broj veći od 10.</p>
+        <input type="text" id="podatak1">Unos broja:</input>
+        <button id="button1" onclick="provjeriBroj()">Provjeri.</button>
+    </div>
+
+    <!-- 2 -->
+    <div>
+        <p>Dopustiti korisniku unos jednog broja te ispisati ispod je li broj paran ili neparan.</p>
+        <input id="podatak2">Unos podataka</input>
+        <button id="button2" onclick="parnost()">Provjeri.</button>
+    </div>
+
+    <!-- 3 -->
+    <div>
+        <p>Dopustiti korisniku unos jednog broja te od njega oduzeti 5 ako je broj paran, a 7 ako ej broj neparan.
+            Ukoliko je dobiveni broj manji od 0 na ekran ispisati da je došlo do pogreško. Ukoliko broj nije manji od 0
+            na ekran ispisati dobiveni broj.</p>
+        <input type="number" id="podataka3">
+        <button onclick="oduzmiBroj()">Izračunaj.</button>
+    </div>
+
+    <!-- 4 -->
+    <div>
+        <p>Dopustiti korisniku unos jednog broja te ispod ispisati sve brojeve od 1 do tog broja. Ukoliko je uneseni
+            broj manji ili jednak jedinici ispisati poruku pogreške ispod.</p>
+        <input id="podatak4">Unos podataka</input>
+        <button id="button4" onclick="nekiBroj()">Provjeri.</button>
+    </div>
+
+    <!-- 5 -->
+    <div>
+        <p>Dopustiti korisniku unos jednog broja te zbojiti sve brojeve od 1 do tog broja. Ukolik je uneseni broj manji
+            ili jednak jedinici ispisati poruku pogređke ispod.</p>
+        <input id="podatak5">Unos podataka</input>
+        <button id="button5" onclick=" zbrajanje()">Izračunaj.</button>
+    </div>
+
+    <!-- 6 -->
+    <div>
+        <p>Dopustiti korisniku unos dva broja te ispod ispisati zbroj svih brojeva između unesena dva broja.</p>
+        <input id="podatak6a">Unos podataka</input><br>
+        <input id="podatak6b">Unos podataka</input>
+        <button id="button6" onclick=" zbrojiSve()">Izračunaj.</button>
+    </div>
+    <script src="./script.js"></script>
+</body>
+
+</html>
