@@ -1,0 +1,11 @@
+.removeButton:hover {
+	background-color: red;
+}
+
+.todoList li {
+	list-style-type: none;
+}
+
+.todoList li.done { 
+	text-decoration: line-through;
+}
