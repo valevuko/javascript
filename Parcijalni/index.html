@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
+    <title>Parcijalni ispit</title>
+</head>
+
+<body>
+    <!--     <audio src="https://itunes.apple.com/search?term=indie&entity=song" id="izvorGlazbe"></audio>
+ -->
+    <div class="find">
+        <p>Pronađi pjesmu:</p>
+        <input for="search" id="song"></input>
+        <button id="button" onclick="findSong()">Provjeri.</button>
+    </div>
+
+    <div class="rezultati">
+        <table id="myTable">
+            <thead>
+                <tr>
+                    <th>Rezultati:</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                </tr>
+            </tbody>
+
+        </table>
+    </div>
+
+    <div class="loader"></div>
+
+    <script>
+        async function findSong() {
+            let pjesma = document.getElementById("song").value;
+
+            let url = `https://itunes.apple.com/search?term=${pjesma}&entity=song`
+            const songs = await getSong(url)
+            let data = []
+
+            data = songs.map(song => ({
+                izvodac: song.artistName,
+                pjesma: song.trackCensoredName
+            }))
+
+
+            let tbodytablica = document.getElementById("myTable").getElementsByTagName('tbody')[0];
+
+            for (const objektPjesma of data) {
+                let newRow = tbodytablica.insertRow();
+                let newCell
+                newRow.insertCell().append(objektPjesma.izvodac)
+                newRow.insertCell().append(objektPjesma.pjesma)
+            }
+
+        }
+
+        async function getSong(url) {
+            try {
+                let songs = await axios.get(url)
+                if (songs.data.results.length) {
+
+                    let result = songs.data.results
+                    return result;
+                } else {
+                    alert("Nema traženog pojma.")
+                }
+            } catch (error) {
+                alert("Nema traženog pojma.")
+            }
+
+        }
+    </script>
+
+</body>
+
+</html>
