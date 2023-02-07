@@ -11,13 +11,18 @@
 <body>
     <p id='text'>JavaScript Exercises - w3resource</p>
     <div>
-        <button id="jsstyle" onclick="funkcijaZaPromjenu()">Style</button>
+        <input type="text" id="color">Unesite boju:</input>
+        <button id="jsstyle" onclick="funkcijaZaPromjenu()">Color</button>
     </div>
     <!-- Potrebno dodati JS i napisati funkciju za promjenu boje teksta koja reagira klikom na button.  -->
     <script>
         function funkcijaZaPromjenu() {
-            var novaBoja = document.getElementById("text").style.color = "green";
-            return;
+            var color = document.getElementById("color").value
+            console.log(color)
+            if (color) {
+                var novaBoja = document.getElementById("text").style.color = color
+                return;
+            }
         }
     </script>
 </body>
